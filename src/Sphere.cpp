@@ -11,7 +11,7 @@ bool Sphere::intersect(
     
     double r = radius;
     double A = d.dot(d);
-    double B = 2 * d.(e - c);
+    double B = 2 * d.dot(e - c);
     double C = (e - c).dot(e - c) - r * r;
 
     double delta =  B * B - 4 * A * C;
@@ -45,4 +45,3 @@ bool Sphere::intersect(
     
     return flag;
 }
-
